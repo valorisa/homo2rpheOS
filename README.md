@@ -24,7 +24,7 @@ To set up **Homo²rpheOS** on Alpine Linux, follow these steps:
 1. **Update Package List:**
    Ensure your package list is up-to-date:
    ```sh
-   apk update
+   apk update && apk upgrade
    ```
 
 2. **Install Git:**
