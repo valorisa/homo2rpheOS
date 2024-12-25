@@ -54,7 +54,7 @@ cmake --build . --target sealexamples
 
 ---
  **Note:**
-Please, a script file 'setup.sh' is located in master branch.
+Please, a script file 'setup.sh' is located here, in main branch.
  
  #### 📚 **How It Works**  
 
