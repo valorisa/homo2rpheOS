@@ -28,6 +28,7 @@ In today's world, data security and privacy are paramount. Homo²rpheOS ensures 
 ---
 
 #### 🛠️ **Installation and Setup**  
+To set up **Homo²rpheOS** on Alpine Linux, follow these steps:
 ```bash
 # Clone the repository
 git clone https://github.com/valorisa/homo2rpheOS.git
