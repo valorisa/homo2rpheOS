@@ -53,8 +53,10 @@ cmake --build . --target sealexamples
 ```
 
 ---
-
-#### 📚 **How It Works**  
+ **Note:**
+Please, a script file 'setup.sh' is located in master branch.
+ 
+ #### 📚 **How It Works**  
 
 1. **Encryption of Sensitive Data**  
    - Input data is encrypted using chosen schemes (BFV, BGV, or CKKS).
