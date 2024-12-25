@@ -17,23 +17,53 @@ Homo²rpheOS (or Homo2rpheOS, pronounced Homomorph[e]OS)
 - **BGV (Brakerski-Gentry-Vaikuntanathan):** A more advanced encryption scheme providing support for both leveled and fully homomorphic encryption.
 - **CKKS (Cheon-Kim-Kim-Song):** A scalable encryption scheme designed for approximate computation on real-valued data.
 
-### **Core Components:**
-- **SEAL (Microsoft SEAL Integration):** Homo²rpheOS is built on top of Microsoft’s SEAL library, a robust and well-documented implementation of homomorphic encryption.
-- **Homomorphic Operations:** Supports a variety of operations on encrypted data, including addition, multiplication, rotation, and more.
-- **Example Applications:** Includes example projects demonstrating practical use cases such as secure computations on medical data, encrypted searches, and privacy-preserving machine learning.
+### **Getting Started on Alpine Linux:**
 
-### **Use Cases:**
-- **Privacy-Preserving Data Analysis:** Perform computations on encrypted data without compromising privacy, suitable for fields like finance, healthcare, and cloud computing.
-- **Secure Multi-Party Computation (SMPC):** Collaborate across parties while keeping individual data private and performing joint computations.
-- **Machine Learning on Encrypted Data:** Train and use machine learning models on encrypted datasets to preserve data confidentiality.
+To set up **Homo²rpheOS** on Alpine Linux, follow these steps:
 
-### **Getting Started:**
-1. Clone the repository:
-   ```bash
+1. **Update Package List:**
+   Ensure your package list is up-to-date:
+   ```sh
+   apk update
+   ```
+
+2. **Install Git:**
+   Install Git to clone the repository:
+   ```sh
+   apk add git
+   ```
+
+3. **Clone the Repository:**
+   Clone the **Homo²rpheOS** repository from GitHub:
+   ```sh
    git clone https://github.com/valorisa/homo2rpheOS.git
    ```
-2. Install dependencies and build the project as per the provided instructions in the `README`.
-3. Run the example programs to see the homomorphic encryption in action and learn how to implement your own applications using the framework.
+
+4. **Navigate to the Project Directory:**
+   ```sh
+   cd homo2rpheOS
+   ```
+
+5. **Install Dependencies:**
+   Install the necessary dependencies. Assuming the project uses CMake and a C++ compiler:
+   ```sh
+   apk add cmake make g++  # Adjust as necessary based on project requirements
+   ```
+
+6. **Build the Project:**
+   Create a build directory and compile the project:
+   ```sh
+   mkdir build
+   cd build
+   cmake ..
+   make
+   ```
+
+7. **Run Example Programs:**
+   Execute the example programs to see homomorphic encryption in action:
+   ```sh
+   ./bin/sealexamples
+   ```
 
 ### **Contributing:**
 We welcome contributions to **Homo²rpheOS**. Feel free to fork the repository, create pull requests, and submit issues. Please follow our contribution guidelines for smooth collaboration.
@@ -43,9 +73,4 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use, mod
 
 ---
 
-### **Why Homo²rpheOS?**
-Homomorphic encryption is a rapidly evolving field, and **Homo²rpheOS** aims to provide a reliable and cutting-edge toolset for researchers, developers, and organizations seeking to harness the power of encryption for secure computations. By focusing on ease of use, performance, and extensibility, we strive to make homomorphic encryption more accessible and practical for real-world applications.
-
----
-
-This description gives a comprehensive overview of your project, its key features, and its purpose, and it can serve as an engaging and informative introduction to potential users and contributors.
+This enhanced description provides clear, step-by-step instructions tailored for Alpine Linux users, making it more accessible and comprehensive for developers looking to utilize your framework. 
