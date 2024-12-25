@@ -65,6 +65,9 @@ To set up **Homo²rpheOS** on Alpine Linux, follow these steps:
    ./bin/sealexamples
    ```
 
+### **Note:**
+Please. The files are located in the master branch.
+
 ### **Contributing:**
 We welcome contributions to **Homo²rpheOS**. Feel free to fork the repository, create pull requests, and submit issues. Please follow our contribution guidelines for smooth collaboration.
 
