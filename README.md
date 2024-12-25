@@ -1,79 +1,76 @@
-# Homo²rpheOS
-Homo²rpheOS (or Homo2rpheOS, pronounced Homomorph[e]OS)
+### **Homo²rpheOS: Homomorphic Cryptography Framework for Real-World Applications**
 
-## **Homo²rpheOS - Homomorphic Encryption Framework**
+Homo²rpheOS (or Homo2rpheOS, pronounced Homomorph[e]OS)
 
 **Homo²rpheOS** is a state-of-the-art open-source framework designed to facilitate the development, testing, and implementation of homomorphic encryption schemes. The project integrates the latest advancements in privacy-preserving technologies, providing a powerful toolkit for developers and researchers in the field of cryptography and secure computing.
 
-### **Key Features:**
-- **Homomorphic Encryption Support:** Implements various encryption schemes such as BFV, BGV, and CKKS, enabling computations on encrypted data without decryption.
-- **Cross-Platform Compatibility:** Compatible with different operating systems, including Linux, macOS, and Windows, ensuring wide accessibility.
-- **Easy Integration:** Provides an intuitive API for seamless integration into custom applications, supporting secure data processing for sensitive information.
-- **Optimized for Performance:** Includes efficient algorithms for encryption, decryption, and homomorphic operations, tailored to handle large-scale computations securely.
-- **Customizable and Extensible:** Built with modularity in mind, allowing easy extensions of existing schemes and addition of new encryption algorithms.
+Homo²rpheOS is an open-source framework leveraging cutting-edge **homomorphic encryption (HE)** techniques, designed to enable secure computation on encrypted data without decryption. By supporting Microsoft SEAL and providing tools for experimentation, development, and integration, Homo²rpheOS paves the way for privacy-preserving solutions across industries.
 
-### **Supported Homomorphic Encryption Schemes:**
-- **BFV (Brakerski/Fan-Vercauteren):** A leveled encryption scheme optimized for integer operations.
-- **BGV (Brakerski-Gentry-Vaikuntanathan):** A more advanced encryption scheme providing support for both leveled and fully homomorphic encryption.
-- **CKKS (Cheon-Kim-Kim-Song):** A scalable encryption scheme designed for approximate computation on real-valued data.
-
-### **Getting Started on Alpine Linux:**
-
-To set up **Homo²rpheOS** on Alpine Linux, follow these steps:
-
-1. **Update Package List:**
-   Ensure your package list is up-to-date:
-   ```sh
-   apk update && apk upgrade
-   ```
-
-2. **Install Git:**
-   Install Git to clone the repository:
-   ```sh
-   apk add git
-   ```
-
-3. **Clone the Repository:**
-   Clone the **Homo²rpheOS** repository from GitHub:
-   ```sh
-   git clone https://github.com/valorisa/homo2rpheOS.git
-   ```
-
-4. **Navigate to the Project Directory:**
-   ```sh
-   cd homo2rpheOS
-   ```
-
-5. **Install Dependencies:**
-   Install the necessary dependencies. Assuming the project uses CMake and a C++ compiler:
-   ```sh
-   apk add cmake make g++  # Adjust as necessary based on project requirements
-   ```
-
-6. **Build the Project:**
-   Create a build directory and compile the project:
-   ```sh
-   mkdir build
-   cd build
-   cmake ..
-   make
-   ```
-
-7. **Run Example Programs:**
-   Execute the example programs to see homomorphic encryption in action:
-   ```sh
-   ./bin/sealexamples
-   ```
-
-### **Note:**
-Please. The files are located in the master branch.
-
-### **Contributing:**
-We welcome contributions to **Homo²rpheOS**. Feel free to fork the repository, create pull requests, and submit issues. Please follow our contribution guidelines for smooth collaboration.
-
-### **License:**
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
+#### 🚀 **Key Features**
+- **Native Homomorphic Encryption**: Built on the robust Microsoft SEAL library, supporting BFV, BGV, and CKKS encryption schemes.
+- **Modular Framework**: Easily integrate custom HE computations into existing workflows.
+- **Comprehensive Examples**: Explore practical implementations, from simple polynomial operations to advanced performance benchmarks.
+- **Optimized for Alpine Linux**: Lightweight and efficient, ideal for containerized environments or resource-constrained systems.
 
 ---
 
-This enhanced description provides clear, step-by-step instructions tailored for Alpine Linux users, making it more accessible and comprehensive for developers looking to utilize your framework. 
+#### 🌟 **Why Use Homo²rpheOS?**
+In today's world, data security and privacy are paramount. Homo²rpheOS ensures sensitive information remains encrypted, even during computation, mitigating risks of data exposure in sectors like:
+
+1. **Finance**  
+   - *Example*: Securely compute aggregated loan risk across multiple financial institutions without exposing individual client data.  
+   - *Use case*: Encrypted salary data analysis for employee pay equity studies, while maintaining strict confidentiality.  
+
+2. **Healthcare**  
+   - *Example*: Run predictive models on encrypted medical records to identify at-risk patients, ensuring compliance with privacy regulations like GDPR and HIPAA.  
+   - *Use case*: Conduct encrypted genomic data analysis for personalized medicine, preserving patient anonymity.  
+
+---
+
+#### 🛠️ **Installation and Setup**  
+```bash
+# Clone the repository
+git clone https://github.com/valorisa/homo2rpheOS.git
+cd homo2rpheOS
+
+# Install dependencies on Alpine Linux
+sudo apk update
+sudo apk upgrade
+sudo apk add cmake build-base git libressl-dev python3 python3-dev py3-pip
+
+# Build the Microsoft SEAL library
+cd SEAL
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build
+
+# Test SEAL examples
+cd native/examples
+mkdir build && cd build
+cmake ..
+cmake --build . --target sealexamples
+./bin/sealexamples
+```
+
+---
+
+#### 📚 **How It Works**  
+
+1. **Encryption of Sensitive Data**  
+   - Input data is encrypted using chosen schemes (BFV, BGV, or CKKS).
+   - The framework uses polynomial operations (e.g., multiplication, addition) to compute on ciphertexts.  
+
+2. **Secure Computations**  
+   - Homomorphic operations allow secure calculations without decrypting data.
+   - The noise budget is actively managed to ensure accuracy and security.
+
+3. **Real-World Examples**  
+   - Example scripts demonstrate polynomial evaluation, secure addition, and real-world applications like risk scoring in finance or medical data aggregation.
+
+---
+
+#### 🌐 **Contribute**  
+We welcome contributions! Whether you're interested in enhancing documentation, implementing new features, or sharing your use cases, feel free to open an issue or submit a pull request.  
+
+#### 📫 **Get in Touch**  
+For any inquiries or collaboration opportunities, feel free to contact us through the repository.
+
