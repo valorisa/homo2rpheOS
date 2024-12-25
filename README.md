@@ -75,5 +75,5 @@ Please, a script file 'setup.sh' is located here, in main branch.
 We welcome contributions! Whether you're interested in enhancing documentation, implementing new features, or sharing your use cases, feel free to open an issue or submit a pull request.  
 
 #### 📫 **Get in Touch**  
-For any inquiries or collaboration opportunities, feel free to contact us through the repository.
+For any inquiries or collaboration opportunities, feel free to contact me through the repository.
 
