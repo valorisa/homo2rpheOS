@@ -1,6 +1,6 @@
 ### **Homo²rpheOS: Homomorphic Cryptography Framework for Real-World Applications**
 
-Homo²rpheOS (or Ho(mo)²rpheOS, pronounced Homomorph[e]OS)
+Homo²rpheOS (or Ho|mo|²rpheOS, pronounced Homomorph[e]OS)
 
 **Homo²rpheOS** is a state-of-the-art open-source framework designed to facilitate the development, testing, and implementation of homomorphic encryption schemes. The project integrates the latest advancements in privacy-preserving technologies, providing a powerful toolkit for developers and researchers in the field of cryptography and secure computing.
 
